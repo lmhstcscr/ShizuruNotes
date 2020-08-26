@@ -1,5 +1,7 @@
 # ShizuruNotes
 An unofficial Android tool application of the game "Princess Connect Re:Dive".  
+尝试使用国服的服务器，因为不是专业程序猿没有JAVA开发经验只能在原来code的基础上强行改了数据库指向，很多问题没有解决
+git用的新手上路请多指教
 
 ## Requirement
 * Android 8+  
