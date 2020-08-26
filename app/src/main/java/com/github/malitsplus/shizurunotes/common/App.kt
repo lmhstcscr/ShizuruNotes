@@ -55,7 +55,7 @@ class App : Application() {
     }
 
     private fun initUserServer() {
-        when (UserSettings.get().preference.getString(UserSettings.SERVER_KEY, "jp")) {
+        when (UserSettings.get().preference.getString(UserSettings.SERVER_KEY, "cn")) {
             "jp" -> {
                 Statics.DB_FILE_NAME = Statics.DB_FILE_NAME_JP
                 Statics.DB_FILE_NAME_COMPRESSED = Statics.DB_FILE_NAME_COMPRESSED_JP

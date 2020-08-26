@@ -5,9 +5,9 @@ public class Statics {
     public static final String API_URL = "https://redive.estertion.win";
 
     //  database string for use
-    public static String DB_FILE_NAME_COMPRESSED = "redive_jp.db.br";
-    public static String DB_FILE_NAME = "redive_jp.db";
-    public static String LATEST_VERSION_URL = API_URL + "/last_version_jp.json";
+    public static String DB_FILE_NAME_COMPRESSED = "redive_cn.db.br";
+    public static String DB_FILE_NAME = "redive_cn.db";
+    public static String LATEST_VERSION_URL = API_URL + "/last_version_cn.json";
     public static String DB_FILE_URL = API_URL + "/db/" + DB_FILE_NAME_COMPRESSED;
 
     //  JP database

@@ -294,9 +294,9 @@ class UpdateManager private constructor(
         LogUtils.file(LogUtils.I, "Start download DB ver$serverVersion.")
         progressDialog = MaterialDialog(mContext, MaterialDialog.DEFAULT_BEHAVIOR).apply {
             this.title(R.string.db_update_progress_title, null)
-            .message(R.string.db_update_progress_text, null, null)
-            .cancelable(false)
-            .show()
+                .message(R.string.db_update_progress_text, null, null)
+                .cancelable(false)
+                .show()
         }
         thread(start = true){
             try {

@@ -102,11 +102,11 @@ class UserSettings private constructor(
     }
 
     fun getUserServer(): String {
-        return preference.getString(SERVER_KEY, "jp") ?: "jp"
+        return preference.getString(SERVER_KEY, "cn") ?: "cn"
     }
 
     fun getDbVersion(): Long {
-        return if (preference.getString(SERVER_KEY, null) == "cn") {
+        return if (preference.getString(SERVER_KEY, "cn") == "cn") {
             preference.getLong(DB_VERSION_CN, 0)
         } else {
             preference.getLong(DB_VERSION_JP, 0)
@@ -119,7 +119,7 @@ class UserSettings private constructor(
 
     @SuppressLint("ApplySharedPref")
     fun setDbVersion(newVersion: Long, async: Boolean = true) {
-        when (preference.getString(SERVER_KEY, "jp")) {
+        when (preference.getString(SERVER_KEY, "cn")) {
             "jp" -> {
                 if (async) {
                     preference.edit().putLong(DB_VERSION_JP, newVersion).apply()
